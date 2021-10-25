@@ -2,20 +2,16 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.5.0
     hooks:
-      - id: check-docstring-first
       - id: check-merge-conflict
       - id: check-toml
       - id: check-yaml
       - id: detect-private-key
       - id: end-of-file-fixer
-      - id: name-tests-test
       - id: trailing-whitespace
-  - repo: local
+  - repo: https://github.com/pocc/pre-commit-hooks
+    rev: master
     hooks:
-      - id: flake8
-        name: Flake8
-        description: This hook runs flake8 within this project's poetry environment.
-        entry: poetry run flake8
-        language: system
-        types: [ python ]
-        require_serial: true
+      - id: clang-format
+        args: [ --style=Google ]
+      - id: clang-tidy
+      - id: include-what-you-use
