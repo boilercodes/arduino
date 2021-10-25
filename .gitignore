@@ -1,3 +1,37 @@
+### C++ template
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
 ### Python template
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -138,9 +172,10 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# Jetbrain project settings
-.idea/
+### PlatformIO
+.pio
+CMakeListsPrivate.txt
+cmake-build-*/
 
-# Logs
-logs/
-.log
+### JetBrains template
+.idea/
