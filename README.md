@@ -1,13 +1,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/rmenai-blueprints/arduino">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png" alt="Logo" width="80" height="80">
+    <img src="http://siminnovations.com/wiki/images/7/7a/Arduino_logo_round.png/2048px-Python-logo-notext.svg.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Python</h3>
+<h3 align="center">Arduino</h3>
 
   <p align="center">
-    An interpreted high-level general-purpose programming language
+    An open-source hardware and software company
     <br />
     <a href="https://github.com/rmenai-blueprints/arduino"><strong>Explore the docs »</strong></a>
     <br />
@@ -44,7 +44,7 @@
 
 ## About The Project
 
-This is my main python projects structure. It is pretty much complete, containing all the tools you need for a professional
+This is my main arduino projects structure. It uses the PlatformIO library with c++. It is pretty much complete, containing all the tools you need for a professional
 project.
 
 <!-- Usage -->
@@ -58,21 +58,16 @@ will change all the files to match your repository.
 
 ## Features
 
-#### Project:
+### Project:
 
-* [Docker](https://www.docker.com/) for container packaging.
+* [PlatformIO](https://platformio.org/) for the Arduino framework.
 * [Poetry](https://python-poetry.org/) for dependency management.
-* [.env](https://pypi.org/project/python-dotenv/) for environment variables.
-* [Colorlog](https://pypi.org/project/colorlog/) for colorful logging.
-* [Pytest](https://docs.pytest.org/en/6.2.x/) for writing powerful tests.
-* [pre-commit](https://pre-commit.com/) and [flake8](https://flake8.pycqa.org/en/latest/) for git hooks linting.
+* [pre-commit](https://pre-commit.com/) for git hooks linting.
 
 ### GitHub:
 
-* [Lint & Test](https://github.com/rmenai-blueprints/arduino/blob/main/.github/workflows/lint-test.yaml)
-  and [Build & Push](https://github.com/rmenai-blueprints/arduino/blob/main/.github/workflows/build-push.yaml) GitHub
+* [Lint & Test](https://github.com/rmenai-blueprints/arduino/blob/main/.github/workflows/lint-test.yaml) GitHub
   workflows.
-* [Dependabot](https://dependabot.com/) automated dependency updates.
 * [Issues](https://github.com/rmenai-blueprints/arduino/tree/main/.github/ISSUE_TEMPLATE)
   and [pull requests](https://github.com/rmenai-blueprints/arduino/blob/main/.github/pull_request_template.md) templates.
 
