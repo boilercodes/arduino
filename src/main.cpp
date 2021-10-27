@@ -1,3 +1,4 @@
+#include "config.h"
 #include <Arduino.h>
 
 void setup()
@@ -7,23 +8,33 @@ void setup()
 }
 
 int i = 0;
-int max_blinks = 10;
 
 void loop()
 {
-    if (i < max_blinks)
+    if (i < Config::max_blinks)
     {
         // Turn on the LED.
         digitalWrite(LED_BUILTIN, HIGH);
-        delay(500);
+        delay(Config::delay);
 
         // Turn off the LED.
         digitalWrite(LED_BUILTIN, LOW);
-        delay(500);
+        delay(Config::delay);
         i++;
     }
-    else if (i == max_blinks)
+    else if (i == Config::max_blinks)
     {
+        for (int j = 0; j < Config::max_blinks; j++)
+        {
+            // Turn on the LED.
+            digitalWrite(LED_BUILTIN, HIGH);
+            delay(Config::delay / 10);
+
+            // Turn off the LED.
+            digitalWrite(LED_BUILTIN, LOW);
+            delay(Config::delay / 10);
+        }
+
         exit(0);
     }
 }

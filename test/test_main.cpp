@@ -1,6 +1,8 @@
 #include <Arduino.h>
 #include <unity.h>
 
+#include "config.h"
+
 // void setUp(void) {
 // // set stuff up here
 // }
@@ -9,18 +11,18 @@
 // // clean stuff up here
 // }
 
-void test_led_builtin_pin_number(void)
+void test_led_builtin_pin_number()
 {
     TEST_ASSERT_EQUAL(LED_BUILTIN, 13);
 }
 
-void test_led_state_high(void)
+void test_led_state_high()
 {
     digitalWrite(LED_BUILTIN, HIGH);
     TEST_ASSERT_EQUAL(digitalRead(LED_BUILTIN), HIGH);
 }
 
-void test_led_state_low(void)
+void test_led_state_low()
 {
     digitalWrite(LED_BUILTIN, LOW);
     TEST_ASSERT_EQUAL(digitalRead(LED_BUILTIN), LOW);
@@ -39,19 +41,18 @@ void setup()
 }
 
 int i = 0;
-int max_blinks = 5;
 
 void loop()
 {
-    if (i < max_blinks)
+    if (i < Config::max_blinks)
     {
         RUN_TEST(test_led_state_high);
-        delay(500);
+        delay(Config::delay);
         RUN_TEST(test_led_state_low);
-        delay(500);
+        delay(Config::delay);
         i++;
     }
-    else if (i == max_blinks)
+    else if (i == Config::max_blinks)
     {
         UNITY_END(); // stop unit testing
     }
