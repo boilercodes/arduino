@@ -173,7 +173,7 @@ cython_debug/
 ### PlatformIO
 .pio
 CMakeListsPrivate.txt
-cmake-build-*/
+cmake-build/
 
 ### JetBrains template
 .idea/
