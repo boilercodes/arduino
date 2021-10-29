@@ -64,11 +64,14 @@ jobs:
           poetry install --no-interaction
           poetry run task clang
 
+      - name: Initiate PlatformIO
+        run: platformio -c clion init --ide clion
+
       - name: Build cmake
         run: cmake -DCMAKE_BUILD_TYPE=megaatmega2560
-             -DCMAKE_DEPENDS_USE_COMPILER=FALSE
-             -G "CodeBlocks - Unix Makefiles"
-             -B cmake-build
+          -DCMAKE_DEPENDS_USE_COMPILER=FALSE
+          -G "CodeBlocks - Unix Makefiles"
+          -B cmake-build
 
       # Only when the context is exactly the same, we will restore the cache.
       - name: Pre-commit environment caching
