@@ -90,14 +90,6 @@ python-versions = ">=3.5.0"
 unicode_backport = ["unicodedata2"]
 
 [[package]]
-name = "clang-format"
-version = "13.0.0"
-description = "Clang-Format is an LLVM-based code formatting tool"
-category = "main"
-optional = false
-python-versions = "*"
-
-[[package]]
 name = "click"
 version = "8.0.3"
 description = "Composable command line interface toolkit"
@@ -115,18 +107,6 @@ description = "Cross-platform colored terminal text."
 category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-
-[[package]]
-name = "cpplint"
-version = "1.5.5"
-description = "Automated checker to ensure C++ files follow Google's style guide"
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.extras]
-dev = ["flake8 (>=3.7.8)", "flake8-polyfill", "pylint (>=1.8.4)", "tox (>=3.0.0)", "tox-pyenv", "importlib-metadata (>=0.12)", "pytest (>=4.6,<5.0)", "pytest-cov", "pyparsing (<3)", "zipp (<=0.5.1)", "configparser (<=3.7.4)", "testfixtures"]
-test = ["pytest (>=4.6,<5.0)", "pytest-cov", "pyparsing (<3)", "zipp (<=0.5.1)", "configparser (<=3.7.4)", "testfixtures"]
 
 [[package]]
 name = "distlib"
@@ -466,7 +446,7 @@ ifaddr = ">=0.1.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "ff9bed2301dbffed65eecd24d7777f5ea32c709201d6a4045907a12a020f3768"
+content-hash = "1c1022f21087087da08676372ee00adf31993f80d1b173573fe76479162b1d99"
 
 [metadata.files]
 aiofiles = [
@@ -505,17 +485,6 @@ charset-normalizer = [
     {file = "charset-normalizer-2.0.7.tar.gz", hash = "sha256:e019de665e2bcf9c2b64e2e5aa025fa991da8720daa3c1138cadd2fd1856aed0"},
     {file = "charset_normalizer-2.0.7-py3-none-any.whl", hash = "sha256:f7af805c321bfa1ce6714c51f254e0d5bb5e5834039bc17db7ebe3a4cec9492b"},
 ]
-clang-format = [
-    {file = "clang-format-13.0.0.tar.gz", hash = "sha256:cc0c5e791f180ad5141d800834f6041862ef6179213b6bd7fcd5296719490ac0"},
-    {file = "clang_format-13.0.0-py2.py3-none-macosx_10_9_universal2.whl", hash = "sha256:b7f9824065e1b4d6a1bc5d0000a5550929be63e8bb05252892fbe858130e5167"},
-    {file = "clang_format-13.0.0-py2.py3-none-manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:5bd10c0860a82b2806fad11d161d26f45290b56fdc4e2feaac64e16565482388"},
-    {file = "clang_format-13.0.0-py2.py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:e978ad130d2b540e013784d96252ca89e45a42337faa1bbf5a7db9bf40c37a5c"},
-    {file = "clang_format-13.0.0-py2.py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:9146981b7f32e39614afc1f92aa460480d568e6ec1c7c2f3dfbe2bf3922b19d7"},
-    {file = "clang_format-13.0.0-py2.py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:b8b09158ace5a8155f8a0c0cb75d4140091ab3d95f42b07c7d89c9989666bc88"},
-    {file = "clang_format-13.0.0-py2.py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:3483f3a578b13bcd31c72dd06de49cbc478052611b90371e6d76e302ba763f99"},
-    {file = "clang_format-13.0.0-py2.py3-none-win32.whl", hash = "sha256:934a77d8f0c1820091bad16faf71dc9887c02a3854d202c51b83cf059011c02a"},
-    {file = "clang_format-13.0.0-py2.py3-none-win_amd64.whl", hash = "sha256:3d613b5c68847a8425dd44578ce7216a25fd8235a48ba4f4f70b37ec80d2d319"},
-]
 click = [
     {file = "click-8.0.3-py3-none-any.whl", hash = "sha256:353f466495adaeb40b6b5f592f9f91cb22372351c84caeb068132442a4518ef3"},
     {file = "click-8.0.3.tar.gz", hash = "sha256:410e932b050f5eed773c4cda94de75971c89cdb3155a72a0831139a79e5ecb5b"},
@@ -523,10 +492,6 @@ click = [
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
-]
-cpplint = [
-    {file = "cpplint-1.5.5-py3-none-any.whl", hash = "sha256:e740888c383cf9a05950eb49c4c6e5b8a085fb7d04e71a449d66ed8247b5da22"},
-    {file = "cpplint-1.5.5.tar.gz", hash = "sha256:18e768d8a4e0c329d88f1272b0283bbc3beafce76f48ee0caeb44ddbf505bba5"},
 ]
 distlib = [
     {file = "distlib-0.3.3-py2.py3-none-any.whl", hash = "sha256:c8b54e8454e5bf6237cc84c20e8264c3e991e824ef27e8f1e81049867d861e31"},
