@@ -65,7 +65,7 @@ jobs:
           poetry run task clang
 
       - name: Initiate PlatformIO
-        run: platformio -c clion init --ide clion
+        run: poetry run task init
 
       - name: Build cmake
         run: cmake -DCMAKE_BUILD_TYPE=megaatmega2560
@@ -86,3 +86,6 @@ jobs:
       # PIP_USER=0 to not do a user install.
       - name: Run pre-commit hooks
         run: export PIP_USER=0; poetry run task lint
+
+      - name: Build PlatformIO
+        run: poetry run task build

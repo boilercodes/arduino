@@ -18,12 +18,12 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.taskipy.tasks]
+init = "platformio -c clion init --ide clion"
 build = "platformio run"
 debug = "platformio debug"
 test = "platformio test"
 upload = "platformio run --target upload"
 clean = "platformio run --target clean"
-init = "platformio -c clion init --ide clion"
 clang = "sudo apt-get install clang clang-format clang-tidy"
 lint = "pre-commit run --all-files"
 precommit = "pre-commit install"
