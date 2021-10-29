@@ -1,4 +1,4 @@
-name: Lint
+name: Lint & Build
 
 on:
   push:
@@ -16,7 +16,7 @@ on:
   pull_request:
 
 jobs:
-  lint:
+  lint-build:
     runs-on: ubuntu-latest
     env:
       # Configure pip to cache dependencies and do a user install
@@ -43,6 +43,9 @@ jobs:
         with:
           python-version: 3.9
 
+      - name: Set up cmake
+        uses: jwlawson/actions-setup-cmake@v1.9
+
       # Only when the context is exactly the same, we will restore the cache.
       - name: Python dependencies caching
         uses: actions/cache@v2
@@ -59,17 +62,22 @@ jobs:
         run: |
           pip install poetry
           poetry install --no-interaction
+          poetry run task clang
+
+      - name: Build cmake
+        run: cmake -DCMAKE_BUILD_TYPE=megaatmega2560 \
+             -DCMAKE_DEPENDS_USE_COMPILER=FALSE \
+             -G "CodeBlocks - Unix Makefiles" \
+             -B cmake-build
+
       # Only when the context is exactly the same, we will restore the cache.
       - name: Pre-commit environment caching
         uses: actions/cache@v2
         with:
           path: ${{ env.PRE_COMMIT_HOME }}
           key: "precommit-0-${{ runner.os }}-${{ env.PRE_COMMIT_HOME }}-\
-              ${{ steps.python.outputs.python-version }}-\
-              ${{ hashFiles('./.pre-commit-config.yaml') }}"
-
-      - name: Install linting tools
-        run: poetry run task clang
+               ${{ steps.python.outputs.python-version }}-\
+               ${{ hashFiles('./.pre-commit-config.yaml') }}"
 
       # As pre-commit does not support user installs, we set
       # PIP_USER=0 to not do a user install.
