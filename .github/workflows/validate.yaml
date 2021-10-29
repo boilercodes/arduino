@@ -65,9 +65,9 @@ jobs:
           poetry run task clang
 
       - name: Build cmake
-        run: cmake -DCMAKE_BUILD_TYPE=megaatmega2560 \
-             -DCMAKE_DEPENDS_USE_COMPILER=FALSE \
-             -G "CodeBlocks - Unix Makefiles" \
+        run: cmake -DCMAKE_BUILD_TYPE=megaatmega2560
+             -DCMAKE_DEPENDS_USE_COMPILER=FALSE
+             -G "CodeBlocks - Unix Makefiles"
              -B cmake-build
 
       # Only when the context is exactly the same, we will restore the cache.
