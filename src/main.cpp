@@ -1,3 +1,7 @@
+/*
+ * This is a generated example file that is supposed to be modified.
+ */
+
 #include "config.h"
 #include <Arduino.h>
 
