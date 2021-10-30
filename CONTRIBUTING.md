@@ -22,11 +22,14 @@ failing to comply with our guidelines may lead to a rejection of the contributio
 
 ## Before commits
 
-Install the project git hooks using [poetry]
-
-```shell
-poetry run task precommit
-```
+1. Install the linting dependencies (Only for linux machines)
+   ```shell
+   poetry run task clang
+   ```
+2. Install the project git hooks using [poetry]
+   ```shell
+   poetry run task precommit
+   ```
 
 Now `pre-commit` will run automatically on `git commit`
 
