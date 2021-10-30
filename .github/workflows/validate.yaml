@@ -63,7 +63,10 @@ jobs:
         run: |
           pip install poetry
           poetry install --no-interaction
-          poetry run task clang
+
+      # Install pre-commit linting dependencies
+      - name: Install linting tools
+        run: poetry run task clang
 
       - name: Initiate PlatformIO
         run: poetry run task init
