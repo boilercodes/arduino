@@ -22,7 +22,7 @@ failing to comply with our guidelines may lead to a rejection of the contributio
 
 ## Before commits
 
-1. Install the linting dependencies (Only for linux machines)
+1. Install the linting dependencies (only for linux machines)
    ```shell
    poetry run task clang
    ```
