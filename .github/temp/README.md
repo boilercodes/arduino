@@ -66,10 +66,16 @@ The requirements are:
 
 ## Usage
 
-Now you are done! You can run the project using
+Now you are done! You can build the project using
 
 ```shell
-poetry run task start
+poetry run task build
+```
+
+Then upload it to your micro-controller using
+
+```shell
+poetry run task upload
 ```
 
 ## Contributing
