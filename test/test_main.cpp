@@ -1,6 +1,4 @@
-/*
- * This is a generated example file that is supposed to be modified.
- */
+"""This is a generated example file that is supposed to be modified."""
 
 #include <Arduino.h>
 #include <unity.h>

@@ -1,4 +1,4 @@
-name: Lint & Build
+name: Test & Build
 
 on:
   push:
@@ -15,10 +15,10 @@ on:
       - '.github/ISSUE_TEMPLATE/**'
 
   pull_request:
-  workflow_dispatch:
 
 jobs:
-  lint-build:
+  test-build:
+    name: Test & Build
     runs-on: ubuntu-latest
     env:
       # Configure pip to cache dependencies and do a user install

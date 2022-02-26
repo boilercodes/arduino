@@ -66,7 +66,7 @@ will change all the files to match your repository.
 
 ### GitHub:
 
-* [Lint & Build](https://github.com/rmenai-blueprints/arduino/blob/main/.github/workflows/validate.yaml) GitHub
+* [Test & Build](https://github.com/rmenai-blueprints/arduino/blob/main/.github/workflows/test-build.yaml) GitHub
   workflows.
 * [Issues](https://github.com/rmenai-blueprints/arduino/tree/main/.github/ISSUE_TEMPLATE)
   and [pull requests](https://github.com/rmenai-blueprints/arduino/blob/main/.github/pull_request_template.md) templates.
