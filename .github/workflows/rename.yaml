@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   rename:
-    if: ${{ github.repository	!= 'rmenai-blueprints/arduino' }}
+    if: ${{ github.repository	!= 'boilercodes/arduino' }}
     runs-on: ubuntu-latest
 
     steps:
