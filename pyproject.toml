@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "rmenai-blueprints/arduino"
+name = "boilercodes/arduino"
 version = "0.1.0"
 description = "My Arduino template"
 authors = ["rmenai <rami.menai@outlook.com>"]
