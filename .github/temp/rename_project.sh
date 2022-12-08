@@ -21,22 +21,8 @@ title="$(TitleCaseConverter "$title")"
 
 repo="$author/$name"
 
-# Change pyproject.toml
-sed -i "s|boilercodes/arduino|$name|g" pyproject.toml # Separator is |
-sed -i "s/My Arduino template/$description/g" pyproject.toml # Remove description
-sed -i "s/rmenai <rami.menai@outlook.com>/$author/g" pyproject.toml # Replace authors
-
-# Change LICENSE
-sed -i "s|boilercodes/arduino|$name|g" LICENSE # Separator is |
-
-# Change SECURITY.md
-sed -i "s/rmenai/$author/g" SECURITY.md
-
-# Change .github/pull_request_template.md
-sed -i "s|boilercodes/arduino|$repo|g" .github/pull_request_template.md
 
 # Change README.md
 cp -f .github/temp/README.md README.md # Override file
 sed -i "s/{title}/$title/g" README.md
-sed -i "s/{description}/$description/g" README.md
 sed -i "s|{repo}|$repo|g" README.md # Separator is |
