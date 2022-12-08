@@ -38,9 +38,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
-*.so
-
 # Distribution / packaging
 .Python
 build/
@@ -173,7 +170,7 @@ cython_debug/
 ### PlatformIO
 .pio
 CMakeListsPrivate.txt
-cmake-build/
+cmake-build-*/
 
 ### JetBrains template
 .idea/
