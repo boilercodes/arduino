@@ -1,89 +1,61 @@
-<br />
-<p align="center">
-  <a href="https://github.com/boilercodes/arduino">
-    <img src="http://siminnovations.com/wiki/images/7/7a/Arduino_logo_round.png/2048px-Python-logo-notext.svg.png" alt="Logo" width="80" height="80">
-  </a>
+# [Arduino Template](./README.md) &middot; [![GitHub license]](./LICENSE) ![Test Action]
 
-<h3 align="center">Arduino</h3>
+This is an extensible template for your arduino project. It uses arduino, more precisely the PlatformIO Framework in order to
+build your project.
 
-  <p align="center">
-    An open-source hardware and software company
-    <br />
-    <a href="https://github.com/boilercodes/arduino"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/boilercodes/arduino">View Demo</a>
-    ·
-    <a href="https://github.com/boilercodes/arduino/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
-    ·
-    <a href="https://github.com/boilercodes/arduino/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
-  </p>
+<!-- Table of Contents -->
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#features">Features</a></li>
-    <ul>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#github">Github</a></li>
-      </ul>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
-
-
-
-<!-- ABOUT THE PROJECT -->
-
-## About The Project
-
-This is my main arduino projects structure. It uses the PlatformIO library with c++. It is pretty much complete, containing all the tools you need for a professional
-project.
-
-<!-- Usage -->
+- [Usage](#usage)
+- [Features](#features)
+  - [Project](#project)
+  - [Github](#github)
+- [License](#license)
+- [Contact](#contact)
 
 ## Usage
 
-All you need to do is click on the "Use this template" button. When the repo is created a GitHub action will start. It
-will change all the files to match your repository.
-
-<!-- Features -->
+All you need to do is click on the [Use this template] button. When your repo is created, wait at least 20 seconds until
+the running action ends.
 
 ## Features
 
 ### Project:
 
-* [PlatformIO](https://platformio.org/) for the Arduino framework.
-* [Poetry](https://python-poetry.org/) for dependency management.
-* [pre-commit](https://pre-commit.com/) for git hooks linting.
+* [PlatformIO] for the Arduino framework.
+* [Poetry] for dependency management.
+* [pre-commit] for git hooks linting.
 
-### GitHub:
+### GitHub
 
-* [Test & Build](https://github.com/boilercodes/arduino/blob/main/.github/workflows/test-build.yaml) GitHub
-  workflows.
-* [Issues](https://github.com/boilercodes/arduino/tree/main/.github/ISSUE_TEMPLATE)
-  and [pull requests](https://github.com/boilercodes/arduino/blob/main/.github/pull_request_template.md) templates.
-
-## Contributing
-
-See [CONTRIBUTING.md](https://github.com/boilercodes/arduino/blob/main/CONTRIBUTING.md) for ways to get started.
-
-<!-- LICENSE -->
+- [Community Standards] files.
+- [Issues](./.github/ISSUE_TEMPLATE) templates.
+- [Test](./.github/workflows/test-build.yaml) and [Build](./.github/workflows/test-build.yaml) GitHub workflows.
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/boilercodes/arduino/blob/main/LICENSE) for more
-information.
-
-<!-- CONTACT -->
+Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 
 ## Contact
 
-Menai Rami - [@menai_rami](https://twitter.com/menai_rami) - rami.menai@outlook.com
+Rami Menai - [@menai_rami][twitter] - [rami.menai@outlook.com][email]
+
+<!-- Packages Links -->
+
+[platformio]: https://platformio.org
+[poetry]: https://python-poetry.org
+[pre-commit]: https://pre-commit.com
+
+<!-- Repository links -->
+
+[community standards]: https://github.com/boilercodes/arduino/community
+[use this template]: https://github.com/boilercodes/arduino/generate
+
+<!-- Shields.io links -->
+
+[gitHub license]: https://img.shields.io/badge/license-MIT-blue.svg
+[test action]: https://github.com/boilercodes/arduino/actions/workflows/test-build.yaml/badge.svg
+
+<!-- Social Media links -->
+
+[email]: mailto:rami.menai@outlook.com
+[twitter]: https://twitter.com/menai_rami
