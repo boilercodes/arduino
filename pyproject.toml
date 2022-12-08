@@ -14,7 +14,7 @@ taskipy = "^1.10.3"
 pre-commit = "^2.20.0"
 
 [tool.taskipy.tasks]
-init = "platformio -c clion init --ide clion && pre-commit install"
+init = "pre-commit install && platformio -c clion init"
 build = "platformio run"
 debug = "platformio debug"
 test = "platformio test"

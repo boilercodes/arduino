@@ -20,17 +20,26 @@ The requirements are [Python] and [Poetry].
    poetry install
    ```
 
+3. Initialize the project
+   ```shell
+   poetry run task init --ide {ide}
+   ```
+
 ## Usage
 
 You can build the project using
 ```shell
-poetry run task build
+poetry run task build -e {environment}
 ```
 
 Then upload it to your micro-controller using
 ```shell
-poetry run task start
+poetry run task start -e {environment}
 ```
+
+The available environments are:
+- `uno`
+- `megaatmega2560`
 
 ## License
 
